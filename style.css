@@ -1,0 +1,85 @@
+/* Estilos para el cuerpo (body) de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    background-color: #4CAF50; /* Color del fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    font-size: 1.5em; /* Tamaño del texto del encabezado */
+}
+
+div {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+}
+
+img{
+    width: 100px;
+    position: relative;
+    left: -390px; /* Mueve la imagen hacia la izquierda */
+}
+
+
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center; /* Centrar los enlaces del menú */
+    background-color: #333; /* Fondo del menú de navegación */
+    padding: 10px 0; /* Espaciado interno */
+}
+
+nav a {
+    color: white; /* Color del texto de los enlaces */
+    margin: 0 15px; /* Espaciado entre enlaces */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white; /* Fondo blanco para las secciones */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para los títulos */
+h2, h3 {
+    color: #4CAF50; /* Color de los títulos principales */
+}
+
+/* Estilos para los títulos */
+h1{
+    color: #f6fdf6; /* Color de los títulos principales */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 1px;
+    background-color: #333; /* Fondo oscuro para el pie */
+    color: white; /* Texto blanco en el pie de página */
+    position: fixed; /* Fijar en la parte inferior */
+    width: 100%; /* Que ocupe todo el ancho */
+    bottom: 0; /* Posición en la parte baja de la pantalla */
+}
+
+

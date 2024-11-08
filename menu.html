@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <!-- Enlaces para la fuente Bebas Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style_menu.css">
+
+    <style>
+        h1, h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            text-align: center;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 1em;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center; /* Centrar texto en celdas */
+        }
+        th {
+            background-color: #4CAF50; /* Cambiar color de encabezado a verde */
+            color: white;
+        }
+        td img {
+            width: 100px;
+            height: auto;
+        }
+        .ordenar {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            display: block; /* Para centrar el botón */
+            margin: 0 auto; /* Para centrar el botón */
+        }
+        .ordenar:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center; /* Centrar el texto del pie de página */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+        </div>
+        <h1>Almuerzos a Domicilio</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Nuestro Menú</h2>
+        <table border="4px" bordercolor="#4CAF50">
+            <thead>
+                <tr>
+                    <th>Comida</th>
+                    <th>Nombre del Plato</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="IMAGENES/Menu1.webp" alt="Menu 1"></td>
+                    <td>Menu 1</td>
+                    <td>Porción de carne jugosa acompañada de arroz blanco, ensalada fresca de lechuga y tomate, y una porción de papas al vapor.</td>
+                    <td>$11.000</td>
+                </tr>
+                <tr>
+                    <td><img src="IMAGENES/Menu2.webp" alt="Menu 2"></td>
+                    <td>Menu 2</td>
+                    <td>Delicioso pollo a la parrilla servido con vegetales al vapor, puré de papas cremoso y una ensalada fresca de pepino y zanahoria.</td>
+                    <td>$11.000</td>
+                </tr>
+                <tr>
+                    <td><img src="IMAGENES/Menu3.webp" alt="Menu 3"></td>
+                    <td>Menu 3</td>
+                    <td>Carne en guiso, acompañado de arroz blanco, frijoles sazonados y una ensalada mixta de hojas verdes, tomate y cebolla..</td>
+                    <td>$11.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Almuerzos a Domicilio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

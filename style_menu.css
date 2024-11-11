@@ -1,110 +1,126 @@
-/* Estilos generales para la página */
+/* Reset de márgenes y padding del body */
 body {
-    font-family: Arial, sans-serif; /* Establece la fuente de la página */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
-    background: #f4f4f4; /* Fondo de la página */
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo */
 }
 
 /* Estilos para el encabezado */
 header {
-    background: #4CAF50; /* Fondo del encabezado */
-    color: #fff; /* Color del texto en el encabezado */
-    padding: 10px 0; /* Espaciado superior e inferior */
-    text-align: center; /* Centra el texto en el encabezado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #4CAF50; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
 }
 
-header h1 {
-    margin: 0; /* Elimina el margen del título */
+    header img {
+        width: -300px; /* Tamaño del logo (ancho) */
+        margin-right: -390px; /* Espacio a la derecha del logo */
+        position: relative;
+        top: 5px;
+    }
+
+/* Barra de navegación */
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
 }
 
-/* Estilos para el menú de navegación */
-nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el relleno de la lista */
-}
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-nav ul li {
-    display: inline; /* Muestra los elementos de la lista en línea */
-    margin: 0 10px; /* Espaciado horizontal entre los elementos de la lista */
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-nav ul li a {
-    color: #fff; /* Color del texto de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-weight: bold; /* Establece el texto en negrita */
-}
-
-/* Estilos para las secciones */
-section {
-    padding: 20px; /* Espaciado interno */
-    margin: 0 auto; /* Centra la sección horizontalmente */
-    max-width: 800px; /* Establece un ancho máximo para la sección */
-}
-
-/* Estilos para la sección de menú */
+/* Estilos para la sección del menú */
 #menu .platos {
-    display: flex; /* Usa Flexbox para la disposición de los platos */
-    flex-wrap: wrap; /* Permite que los platos se envuelvan en múltiples líneas */
-    gap: 20px; /* Espaciado entre los platos */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Alinea los elementos del menú en el centro */
 }
 
 #menu .plato {
-    background: #fff; /* Fondo blanco para cada plato */
-    border: 1px solid #ddd; /* Borde gris claro */
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta el desbordamiento */
-    text-align: center; /* Centra el texto en el plato */
-    padding: 10px; /* Espaciado interno en cada plato */
-    width: calc(50% - 20px); /* Ancho del plato, dos platos por fila */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    width: calc(50% - 20px); /* Asegura que los platos se ajusten a la mitad del contenedor */
 }
 
-#menu .plato img {
-    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-bottom: 1px solid #ddd; /* Borde inferior para separar la imagen del resto */
-}
+    #menu .plato img {
+        max-width: 80%; /* Ajusta las imágenes dentro de los platos */
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    }
 
-#menu .plato h3 {
-    margin: 10px 0 5px; /* Espaciado del título del plato */
-}
+    #menu .plato h3 {
+        margin: 10px 0 5px;
+        color: #4CAF50; /* Color principal para los encabezados */
+    }
 
-#menu .plato p {
-    color: #666; /* Color del texto de la descripción */
-}
+    #menu .plato p {
+        color: #666;
+    }
 
-#menu .plato .precio {
-    display: block; /* Muestra el precio en una línea separada */
-    font-size: 1.2em; /* Tamaño de fuente mayor para el precio */
-    color: #333; /* Color del texto del precio */
-    margin: 10px 0; /* Espaciado del precio */
-}
+    #menu .plato .precio {
+        font-size: 1.2em;
+        color: #333;
+        margin: 10px 0;
+    }
 
-/* Estilos para el formulario de contacto */
-form {
-    display: grid; /* Usa una cuadrícula para el formulario */
-    gap: 10px; /* Espaciado entre los elementos del formulario */
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-form label {
-    font-weight: bold; /* Establece el texto de las etiquetas en negrita */
-}
-
-form input, form textarea {
-    width: 100%; /* Hace que los campos de entrada ocupen todo el ancho disponible */
-    padding: 10px; /* Espaciado interno en los campos */
-    border: 1px solid #ddd; /* Borde gris claro en los campos */
-    border-radius: 5px; /* Bordes redondeados en los campos */
-}
-
 
 /* Estilos para el pie de página */
 footer {
-    background: #333; /* Fondo del pie de página */
-    color: #fff; /* Color del texto en el pie de página */
-    text-align: center; /* Centra el texto en el pie de página */
-    padding: 0px 0; /* Espaciado superior e inferior */
-    position: fixed; /* Fija el pie de página en la parte inferior */
-    bottom: 0; /* Posiciona el pie de página en la parte inferior de la ventana */
-    width: 100%; /* Ancho completo del pie de página */
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
+/* Estilos para la imagen del Menu 1 */
+.menu-img-1 {
+    position: relative;
+    top: 10px; /* Desplaza la imagen 10px hacia abajo */
+    left: 20px; /* Desplaza la imagen 20px hacia la derecha */
+}
+
+/* Estilos para la imagen del Menu 2 */
+.menu-img-2 {
+    position: relative;
+    top: 10px; /* Desplaza la imagen 15px hacia arriba */
+    left: 20px; /* Desplaza la imagen 10px hacia la izquierda */
+}
+
+/* Estilos para la imagen del Menu 3 */
+.menu-img-3 {
+    position: relative;
+    top: 10px; /* Desplaza la imagen 5px hacia abajo */
+    left: 20px; /* Desplaza la imagen 30px hacia la derecha */
+}
+
+
